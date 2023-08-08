@@ -7,16 +7,20 @@
 <p>Username: @Model.Username</p>
 
 <h3>@Model.Username's Messages</h3>
+@if (Model.Messages.Any() != false)
+{
 
-@foreach (var message in Model.Messages)
-{
-    <p>@Model.Username: @message.Content</p>
+	
+
+
+	@foreach (var message in Model.Messages)
+	{
+		<p>@Model.Username: @message.Content</p>
+	}
 }
-@if (Model.Messages == null)
+else
 {
-    
-   <p>Sorry, me so Empty :(</p>
-   
+	<p>Sorry, me so Empty :(</p>
 }
 
 
