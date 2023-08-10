@@ -7,6 +7,7 @@ using MvcMessageLogger.Controllers;
 using MvcMessageLogger.DataAccess;
 
 
+
 namespace MvcMessageLogger.FeatureTests
 {
 	public class Program

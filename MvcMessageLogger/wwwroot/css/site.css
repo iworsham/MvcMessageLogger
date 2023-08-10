@@ -1,18 +1,64 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: black;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    /*    padding-bottom: 5px;*/
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+label {
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+button {
+    color: limegreen;
+    background-color: black;
+    border: solid;
+    border-radius: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+    button:hover {
+        background-color: lightgreen;
+    }
+h1{
+    color: limegreen;
+}
+h2 {
+    padding-bottom: 40px;
+    color: limegreen;
+}
+
+h3 {
+    color: limegreen;
+}
+p{
+    color: limegreen;
+}
+.navbar.bg-white {
+    background-color: darkgreen !important;
 }

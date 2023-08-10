@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MvcMessageLogger.DataAccess;
 using MvcMessageLogger.Models;
+using System.Reflection.Metadata.Ecma335;
 
 namespace MvcMessageLogger.Controllers
 {
@@ -53,6 +54,11 @@ namespace MvcMessageLogger.Controllers
             user.Messages.Add(message);
             _context.SaveChanges();
             return RedirectToAction("Show", new {id = id});
+        }
+        [Route("users/stats")]
+        public IActionResult Stats()
+        {
+            return View();
         }
     }
 }

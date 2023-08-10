@@ -1,0 +1,25 @@
+﻿@model IEnumerable<User>
+
+
+<h3>Message ranking by user -</h3>
+
+@foreach (var user in Model)
+{
+    <p>@user.Username: @user.Messages.Count() messages</p>
+}
+
+<h3>Commonly used words by user</h3>
+@{
+    List<string> mostCommonWords = ViewData["MostCommonWords"] as List<string>;
+}
+<p>hi</p>
+
+
+<h3>Hour with the most messages</h3>
+
+
+
+
+
+
+
