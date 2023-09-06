@@ -12,13 +12,11 @@ builder.Services.AddDbContext<MvcMessageLoggerContext>(
     options =>
         options
             .UseNpgsql(
-                builder.Configuration.GetConnectionString("MvcMessageLoggerDb")
-                    ?? throw new InvalidOperationException(
-                        "Connection string 'MvcMessageLoggerDb' not found."
-                    )
-            )
-            .UseSnakeCaseNamingConvention()
-);
+builder.Configuration["MVCMESSAGELOGGER_DBCONNECTIONSTRING"]).UseSnakeCaseNamingConvention());
+                   
+                    
+            
+
 
 var app = builder.Build();
 

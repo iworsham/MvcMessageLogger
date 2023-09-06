@@ -16,25 +16,15 @@ namespace MvcMessageLogger.Controllers
         {
             var users = _context.Users
                 .Include(u => u.Messages);
-            List<string> words = new List<string>();
-            {
-                words.Add("hi");
-                words.Add("hi");
-                words.Add("hi");
-                words.Add("hi");
-                words.Add("hi");
-                words.Add("hi");
-                words.Add("hi");
-                words.Add("hi");
-                words.Add("Unicorns");
-                words.Add("hey");
-                words.Add("hello");
+          //  List<string> words = new List<string>();
+         //   {
+          //      words.Add("hi");
+            
 
-
-            }
-            var mostCommonWords = words.GroupBy(w => w)
-                .Select(w => new { KeyField = w.Key, Count = w.Count() })
-                .OrderByDescending(w => w.Count);
+          //  }
+          //  var mostCommonWords = words.GroupBy(w => w)
+             //   .Select(w => w)
+             //   .OrderByDescending(w => w.Count);
   
             return View(users);
         }
