@@ -25,9 +25,10 @@ This here is our landing page made with matrix theme to further draw you in.
 Our user account page displays your name and username along with your posted messages. There is also a form below to add more messages
 
 
-## Coding
+## Wins
 
-`Lonely` is fully bug tested to perfection to make everything enjoyable on our website. 
+-`Lonely` is fully bug tested to perfection to make everything enjoyable on our website. 
+-CRUD actions fullfilled
 
 
 
