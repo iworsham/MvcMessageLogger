@@ -28,7 +28,14 @@ Our user account page displays your name and username along with your posted mes
 ## Wins
 
 -`Lonely` is fully bug tested to perfection to make everything enjoyable on our website. 
--CRUD actions fullfilled
+
+-CRUD actions fulfilled
+
+## Tech Stack
+
+1. Entity Framework Core, Npgsql Postgres , Asp.NetCOre testing 
+
+
 
 
 
